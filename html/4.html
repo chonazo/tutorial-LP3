@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla en Html</title>
+    <style>
+       table,th, td {
+            border: 2px solid red;
+            border-collapse: collapse;
+            padding: 15px;                       
+       }
+       
+    </style>
+    <style>
+        #t2 {
+            width: 100%;
+            background-color: red;       
+        }
+        #t2 tr:nth-child(even) {
+            background-color: gray;
+       }
+
+       #t2 tr:nth-child(odd) {
+            background-color: lightgray;
+       }
+
+       #t2 th {
+            background-color: black;
+            color: white;
+       }
+       
+    </style>
+</head>
+
+<body>
+    <h1>Tabla en HTML</h1>
+    <table style="width: 100%;">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>Perez</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>Pesoa</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>Lopez</td>
+            <td>25</td>
+        </tr>
+    </table>
+    <br>
+    <h1>Tabla 2 en HTML</h1>
+    <table id="t2">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>Perez</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>Pesoa</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>Lopez</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario con varios atributos</title>
+</head>
+
+<body>
+    <h1>Formulario con varios atributos</h1>
+    <h2>Solo lectura</h2>
+    <form action="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" readonly>
+        <br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido">
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <hr>
+    <h2>Deshabilitar campo</h2>
+    <form action="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" disabled>
+        <br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido">
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <hr>
+    <h2>Valor por defecto</h2>
+    <form action="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" value="Juan">
+        <br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido">
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    </form>
+    <hr>
+    <h2>cambiar tamaño al input</h2>
+    <form action="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" size="50">
+        <br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" size="100">
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <hr>
+    <h2>asignar valores mínimos y máximos a los input</h2>
+    <form action="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" minlength="5" maxlength="10">
+        <br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" minlength="2" maxlength="5">
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <hr>
+    <h2>asignar valores mínimos y máximos a los input</h2>
+    <form action="">
+        <label for="fecha1">Fecha1:</label>
+        <input type="date" name="datemax" id="datemax" max="1990-01-01">
+        <br><br>
+        <label for="fecha2">fecha2:</label>
+        <input type="date" name="datemin" id="datemin" min="2000-01-01">
+        <br><br>
+        <label for="numero">Número desde el 1 al 10:</label>
+        <input type="number" name="numero" id="numero" min="1" max="10">
+    </form>
+    <hr>
+    <h2>Subir archivos</h2>
+    <form>
+        <label for="archivo">Selecciona un archivo:</label><br><br>
+        <input type="file" name="archivo" id="archivo" multiple>
+        <br><br>
+        <input type="submit" value="Subir archivo">
+    </form>
+    <hr>
+    <h2>archivos alfabéticos</h2>
+    <form action="">
+        <input type="text" name="texto" id="texto" pattern="[A-Za-z]{3}" title="Debe contener solo letras y tener 3 caracteres"> 
+        <button type="submit">Validar</button>
+        <br><br>
+        <h2>archivos numéricos</h2>
+        <input type="tel" name="numero" id="numero" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" title="Debe contener solo 3 números" placeholder="0981-123-123">
+        <button type="submit">Validar</button>
+    </form>
+    <hr>
+    <h2>Campos requeridos</h2>
+    <form action="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required>
+        <br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" autofocus>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <hr>
+    <h2>Listas</h2>
+    <form action="">
+        <label for="nombres">Nombres:</label>
+        <input list="navegadores">
+        <datalist id="navegadores">
+            <option value="Google Chrome">
+            <option value="Mozilla Firefox">
+            <option value="Opera">
+            <option value="Safari">
+            <option value="Microsoft Edge">
+        </datalist>
+        <br><br>
+    <hr>
+    <h2>Autocomplete</h2>
+    <form action="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" autocomplete="on">
+        <br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" autocomplete="off">
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <hr>
+   <h2>Combo box</h2>
+    <form action="">
+        <label for="pais">Selecciona un país:</label>
+        <select name="pais" id="pais">
+            <option value="argentina">Argentina</option>
+            <option value="chile">Chile</option>
+            <option value="colombia">Colombia</option>
+            <option value="paraguay">Paraguay</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <hr>   
+
+</html>
