@@ -1,0 +1,87 @@
+/*Selectores*/
+
+/*Tipos universales*/
+* {
+    color: brown;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: green;
+}
+
+/*Selectores de clase*/
+.titulo {
+    color: rgb(82, 79, 79);
+}
+
+.parrafo {
+    color: rgb(179, 45, 45);
+}
+
+/*Selectores de ID*/
+#titulo {
+    color: rgb(235, 121, 121);
+}
+
+#parrafo {
+    color: rgb(32, 148, 214);
+}
+
+/*Selectores de atributo*/
+.atributo {
+    color: rgb(10, 10, 10);
+}
+[href] {
+    color: rgb(214, 34, 133);
+}
+
+[href="#"]{
+    color: rgba(34, 214, 34, 0.747);
+}
+/*Selectores de atributos por clase Alt+126 ~ */
+[href~="c"]{
+    color: rgba(131, 138, 131, 0.747);
+}
+/*Selectores de atributos solo una clase | */
+[href|="d"]{
+    color: rgba(1, 36, 1, 0.747);
+}
+/*Selectores de atributos los que empiecen con una clase Alt+94 ^ */
+[href^="e"]{
+    color: rgba(1, 1, 36, 0.747);
+}
+
+/*Selectores de atributos los que terminen con una clase*/
+[href$="f"]{
+    color: rgba(36, 1, 1, 0.747);
+}
+
+/*Selectores de atributos los que contengan una clase*/
+[href*="g"]{
+    color: rgba(36, 36, 1, 0.747);
+}
+
+/* Selectores convinadores*/
+/*toma la configuración del segundo atributo*/
+h1 + h2 {
+    color: rgb(121, 101, 231);
+}
+
+/*Selector hermano gral*/
+h1 ~ h3 {
+    color: rgb(101, 231, 121);
+}
+
+/*Selector hijo*/
+p span {
+    color: rgb(226, 41, 8);
+}
+
+p span {
+    color: rgb(7, 7, 7) important;
+}
+
